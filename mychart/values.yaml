@@ -9,6 +9,7 @@ apps:
   - name: test-2
     image: gcr.io/heptio-images/ks-guestbook-demo
     version: "0.2"
+    
 replicaCount: 1
 
 image:
