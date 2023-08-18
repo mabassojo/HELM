@@ -1,7 +1,14 @@
 # Default values for mychart.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
+apps:
+  - name: test-1
+    image: quay.io/ennlight103/nginx
+    version: "latest"
 
+  - name: test-2
+    image: gcr.io/heptio-images/ks-guestbook-demo
+    version: "0.2"
 replicaCount: 1
 
 image:
