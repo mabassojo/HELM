@@ -5,7 +5,7 @@ RUN mkdir -p /var/cache/nginx/client_temp && \
     chmod -R 755 /var/cache/nginx/
 
 # Call the original entrypoint script
-#ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["docker-entrypoint.sh"]
 
 # By default, run nginx
-CMD ["nginx", "-g", "daemon off;"]
+#CMD ["nginx", "-g", "daemon off;"]
